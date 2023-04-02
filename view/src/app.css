@@ -1,0 +1,69 @@
+.table-refresh{
+min-width: 400px;
+max-width:1000px;
+font-size:14px;
+font-family:'Quicksand',sans-serif;
+}
+
+.table-refresh__table {
+    border-collapse: collapse;
+    width:100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.2);
+    border-bottom: 2px solid #009578;
+}
+
+
+.table-refresh__table thead th{
+    background: #009578;
+    color :#ffffff;
+}
+
+.table-refresh__table th,
+.table-refresh__table td{
+    text-align:left;
+    padding: 9px 18px;
+    font-weight: normal;
+}
+
+
+.table-refresh__table tbody tr:nth-of-type(even)
+{
+    background: #eeeeee;
+}
+
+.table-refresh__options{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px 0;
+}
+
+.table-refresh__options > * :not(:last-child){
+    margin-right: 12px;
+}
+
+.table-refresh__button{
+    background: #eeeeee;
+    color: #333333;
+    border: none;
+    outline:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.table-refresh__button > i{
+    font-size: 1.2rem;
+}
+
+.table-refresh__button-refreshing{
+   animation: 0.2s rotate 2 linear;
+}
+
+
+@keyframes rotate {
+    to{
+        transform: rotate(1turn);
+    }
+}
